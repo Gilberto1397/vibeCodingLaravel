@@ -1,0 +1,2 @@
+criar arquivo por arquivo com o agente
+criar toda a rotina de uma vez
