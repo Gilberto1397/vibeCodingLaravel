@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SomarController;
+use App\Http\Controllers\SubtrairController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::get('/', function () {
 
 Route::get('/somar', [SomarController::class, 'index'])->name('somar.index');
 Route::post('/somar', [SomarController::class, 'somar'])->name('somar');
+
+Route::get('/subtrair', [SubtrairController::class, 'exibirFormulario'])->name('exibirFormulario');
+Route::post('/subtrair', [SubtrairController::class, 'subtrair'])->name('subtrair');
